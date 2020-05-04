@@ -1,0 +1,48 @@
+.btn {
+  position: relative;
+
+  display: inline-block;
+
+  padding-top: 8px;
+  padding-right: 17px;
+  padding-bottom: 8px;
+  padding-left: 17px;
+
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 2.15px;
+  text-transform: uppercase;
+
+  color: #000000;
+
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 8px;
+
+    content: "";
+    transform: translateY(-50%);
+
+    background-color: #f0c52e;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #f0c52e;
+  }
+
+  &:active {
+    color: rgba(#000000, 0.3);
+  }
+}

@@ -1,0 +1,19 @@
+.main-nav {
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__user-nav {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+
+.main-nav__wrapper {
+  display: flex;
+
+  width: 500px;
+
+  justify-content: space-between;
+  align-items: flex-start;
+}
