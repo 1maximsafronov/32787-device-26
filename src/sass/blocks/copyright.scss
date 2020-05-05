@@ -1,0 +1,23 @@
+.copyright {
+  padding: 0;
+}
+
+.copyright__link {
+  display: block;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__image {
+  display: block;
+
+  width: 27px;
+  height: 35px;
+}

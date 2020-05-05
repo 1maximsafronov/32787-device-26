@@ -6,6 +6,13 @@
 .main-nav__user-nav {
   margin: 0;
   margin-bottom: 40px;
+
+  .user-nav__link {
+    &--login,
+    &--logout {
+      margin-right: auto;
+    }
+  }
 }
 
 

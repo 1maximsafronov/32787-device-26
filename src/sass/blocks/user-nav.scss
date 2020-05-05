@@ -30,8 +30,6 @@
   &--login {
     position: relative;
 
-    margin-right: auto;
-
     &::before {
       position: absolute;
       top: 50%;
@@ -50,7 +48,6 @@
   }
 
   &--logout {
-    margin-right: auto;
     padding-left: 0;
 
     opacity: 0.3;
