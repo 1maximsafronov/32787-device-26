@@ -1,0 +1,30 @@
+.nav-services {
+  width: 280px;
+  margin: 0;
+  padding: 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  list-style: none;
+
+  border-right: 7px solid #000000;
+}
+
+.nav-services__item {
+  min-width: 160px;
+  margin-bottom: 25px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--current {
+    width: 100%;
+
+    text-align: left;
+
+    color: #f7e184;
+    background: none;
+    background-color: #000000;
+  }
+}

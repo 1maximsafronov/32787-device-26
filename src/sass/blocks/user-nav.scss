@@ -15,15 +15,52 @@
 }
 
 .user-nav__link {
+  margin-right: 40px;
+  padding-left: 27px;
+
   text-decoration: none;
   letter-spacing: 0.15px;
 
   color: #000000;
 
+  &:last-child {
+    margin-right: 0;
+  }
+
   &--login {
     position: relative;
 
-    padding-left: 27px;
+    margin-right: auto;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+
+      display: block;
+
+      width: 13px;
+      height: 12px;
+
+      content: "";
+      transform: translateY(-50%);
+
+      background-image: url("../img/user.svg");
+    }
+  }
+
+  &--logout {
+    margin-right: auto;
+    padding-left: 0;
+
+    opacity: 0.3;
+  }
+
+  &--username {
+    position: relative;
+
+    margin-right: 20px;
+
 
     &::before {
       position: absolute;
@@ -45,7 +82,6 @@
   &--compare {
     position: relative;
 
-    padding-left: 27px;
 
     &::before {
       position: absolute;
