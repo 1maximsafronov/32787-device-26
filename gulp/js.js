@@ -1,14 +1,22 @@
 const gulp = require(`gulp`);
-const sourcemaps = require(`gulp-sourcemaps`);
-const rollup = require(`gulp-better-rollup`);
-const babel = require(`rollup-plugin-babel`);
+const babel = require(`gulp-babel`);
 const rename = require(`gulp-rename`);
-// const terser = require('gulp-terser');
+const rollup = require(`gulp-rollup`);
+const plumber = require(`gulp-plumber`);
+const sourcemaps = require(`gulp-sourcemaps`);
+// const terser = require(`gulp-terser`);
 
 module.exports = function js() {
-  return gulp.src(`src/js/main.js`)
+  return gulp.src(`./src/js/**/*.js`)
+    .pipe(plumber())
     .pipe(sourcemaps.init())
-    .pipe(rollup({plugins: [babel()]}, `iife`))
+    .pipe(rollup({
+      input: `./src/js/main.js`,
+      format: `iife`,
+    }))
+    .pipe(babel({
+      presets: [`@babel/env`]
+    }))
     // .pipe(terser())
     .pipe(rename(`main.min.js`))
     .pipe(sourcemaps.write())

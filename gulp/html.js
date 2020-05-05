@@ -1,7 +1,7 @@
 const gulp = require(`gulp`);
-const posthtml = require(`gulp-posthtml`);
 const include = require(`posthtml-include`);
 const htmlmin = require(`gulp-htmlmin`);
+const posthtml = require(`gulp-posthtml`);
 
 module.exports = function html() {
   return gulp.src(`src/*.html`)

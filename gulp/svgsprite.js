@@ -1,6 +1,6 @@
 const gulp = require(`gulp`);
-const svgstore = require(`gulp-svgstore`);
 const rename = require(`gulp-rename`);
+const svgstore = require(`gulp-svgstore`);
 
 module.exports = function svgsprite() {
   return gulp.src(`src/img/icon-*.svg`)

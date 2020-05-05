@@ -5,10 +5,9 @@ const rename = require(`gulp-rename`);
 const server = require(`browser-sync`).create();
 const plumber = require(`gulp-plumber`);
 const postcss = require(`gulp-postcss`);
+const normalize = require(`node-normalize-scss`);
 const sourcemaps = require(`gulp-sourcemaps`);
 const autoprefixer = require(`autoprefixer`);
-const normalize = require(`node-normalize-scss`);
-
 
 module.exports = function css() {
   return gulp.src(`src/sass/style.scss`)

@@ -1,8 +1,8 @@
 const gulp = require(`gulp`);
-const server = require(`browser-sync`).create();
 const css = require(`./css`);
 const html = require(`./html`);
 const copy = require(`./copy`);
+const server = require(`browser-sync`).create();
 
 function refresh(done) {
   server.reload();
