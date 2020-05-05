@@ -17,18 +17,19 @@
 }
 
 .filter__group {
+  display: block;
+
   margin: 0;
   margin-bottom: 10px;
   padding: 0;
-  padding-bottom: 40px;
 
   border: none;
-  border-bottom: 2px solid #000000;
 }
 
 .filter__group-title {
   display: block;
 
+  width: 100%;
   margin-bottom: 25px;
 
   font-family: $font-f-secondary;
