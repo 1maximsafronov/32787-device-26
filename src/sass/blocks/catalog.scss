@@ -27,6 +27,7 @@
 
   width: 760px;
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
 
   list-style: none;
@@ -42,4 +43,8 @@
   &:nth-last-child(2) {
     margin-bottom: 0;
   }
+}
+
+.catalog__content {
+  padding-bottom: 77px;
 }
