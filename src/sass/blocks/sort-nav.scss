@@ -1,18 +1,15 @@
-.catalog {
+.sort-nav {
   display: flex;
 
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.catalog__list {
+.sort-nav__list {
   display: flex;
-
-  width: 760px;
-  margin: 0;
-  padding: 0;
 
   list-style: none;
 
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
