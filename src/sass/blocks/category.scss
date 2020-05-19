@@ -1,12 +1,11 @@
 .category__list {
   display: flex;
+  justify-content: space-between;
 
   margin: 0;
   padding: 0;
 
   list-style: none;
-
-  justify-content: space-between;
 }
 
 .category__item {
@@ -36,6 +35,8 @@
 
 .category__picture {
   display: flex;
+  align-items: center;
+  justify-content: center;
 
   width: 160px;
   height: 160px;
@@ -43,9 +44,6 @@
   margin-bottom: 35px;
 
   background-color: rgba(#f0c52e, 0.5);
-
-  justify-content: center;
-  align-items: center;
 }
 
 .category__title {

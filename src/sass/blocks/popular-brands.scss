@@ -5,14 +5,13 @@
 
 .popular-brands__list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
   margin: 0;
   padding: 0;
 
   list-style: none;
-
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .popular-brands__item {

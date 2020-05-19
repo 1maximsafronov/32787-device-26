@@ -7,18 +7,25 @@ const sourcemaps = require(`gulp-sourcemaps`);
 // const terser = require(`gulp-terser`);
 
 module.exports = function js() {
-  return gulp.src(`./src/js/**/*.js`)
-    .pipe(plumber())
-    .pipe(sourcemaps.init())
-    .pipe(rollup({
-      input: `./src/js/main.js`,
-      format: `iife`,
-    }))
-    .pipe(babel({
-      presets: [`@babel/env`]
-    }))
-    // .pipe(terser())
-    .pipe(rename(`main.min.js`))
-    .pipe(sourcemaps.write())
-    .pipe(gulp.dest(`build/js`));
+  return (
+    gulp
+      .src(`./src/js/**/*.js`)
+      .pipe(plumber())
+      .pipe(sourcemaps.init())
+      .pipe(
+        rollup({
+          input: `./src/js/main.js`,
+          format: `iife`,
+        })
+      )
+      .pipe(
+        babel({
+          presets: [`@babel/env`],
+        })
+      )
+      // .pipe(terser())
+      .pipe(rename(`main.min.js`))
+      .pipe(sourcemaps.write())
+      .pipe(gulp.dest(`build/js`))
+  );
 };

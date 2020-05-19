@@ -10,15 +10,16 @@ const sourcemaps = require(`gulp-sourcemaps`);
 const autoprefixer = require(`autoprefixer`);
 
 module.exports = function css() {
-  return gulp.src(`src/sass/style.scss`)
+  return gulp
+    .src(`src/sass/style.scss`)
     .pipe(plumber())
     .pipe(sourcemaps.init())
-    .pipe(sass({
-      includePaths: normalize.includePaths
-    }))
-    .pipe(postcss([
-      autoprefixer()
-    ]))
+    .pipe(
+      sass({
+        includePaths: normalize.includePaths,
+      })
+    )
+    .pipe(postcss([autoprefixer()]))
     .pipe(csso())
     .pipe(rename(`style.min.css`))
     .pipe(sourcemaps.write(`.`))

@@ -1,17 +1,15 @@
 .promo-product__wrapper {
   display: flex;
-
   justify-content: space-between;
 }
 
 
 .promo-product__picture {
   display: flex;
+  flex-grow: 1;
+  justify-content: center;
 
   margin: 0;
-
-  justify-content: center;
-  flex-grow: 1;
 }
 
 .promo-product__info {

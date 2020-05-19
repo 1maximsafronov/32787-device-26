@@ -15,12 +15,10 @@
   }
 }
 
-
 .main-nav__wrapper {
   display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 
   width: 500px;
-
-  justify-content: space-between;
-  align-items: flex-start;
 }

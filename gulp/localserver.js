@@ -10,7 +10,13 @@ function refresh(done) {
 }
 
 module.exports = function localserver() {
-  server.init({server: `build`, notify: false, open: true, cors: true, ui: false});
+  server.init({
+    server: `build`,
+    notify: false,
+    open: true,
+    cors: true,
+    ui: false,
+  });
 
   gulp.watch(`src/*.html`, gulp.series(html, refresh));
   gulp.watch(`src/img/icon-*.svg`, gulp.series(html, refresh));

@@ -8,11 +8,10 @@
 
 .main-footer__wrapper {
   display: flex;
-
-  margin-bottom: 65px;
-
   align-items: center;
   justify-content: space-between;
+
+  margin-bottom: 65px;
 
   &:last-child {
     margin-bottom: 0;
