@@ -14,7 +14,7 @@ module.exports = function js() {
       .pipe(sourcemaps.init())
       .pipe(
         rollup({
-          input: `./src/js/main.js`,
+          input: `./src/js/script.js`,
           format: `iife`,
         })
       )

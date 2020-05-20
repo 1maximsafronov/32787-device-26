@@ -14,6 +14,8 @@
 }
 
 .user-nav__link {
+  position: relative;
+
   margin-right: 40px;
   padding-left: 27px;
 
@@ -27,22 +29,9 @@
   }
 
   &--login {
-    position: relative;
-
-    &::before {
-      position: absolute;
-      top: 50%;
-      left: 0;
-
-      display: block;
-
+    .user-nav__icon {
       width: 13px;
       height: 12px;
-
-      content: "";
-      transform: translateY(-50%);
-
-      background-image: url("../img/user.svg");
     }
   }
 
@@ -53,68 +42,27 @@
   }
 
   &--username {
-    position: relative;
-
     margin-right: 20px;
 
-
-    &::before {
-      position: absolute;
-      top: 50%;
-      left: 0;
-
-      display: block;
-
+    .user-nav__icon {
       width: 13px;
       height: 12px;
-
-      content: "";
-      transform: translateY(-50%);
-
-      background-image: url("../img/user.svg");
     }
   }
 
   &--compare {
-    position: relative;
-
-
-    &::before {
-      position: absolute;
-      top: 50%;
-      left: 7px;
-
-      display: block;
-
+    .user-nav__icon {
       width: 10px;
       height: 10px;
-
-      content: "";
-      transform: translateY(-50%);
-
-      background-image: url("../img/compare.svg");
     }
   }
 
   &--cart {
-    position: relative;
-
     padding-left: 27px;
 
-    &::before {
-      position: absolute;
-      top: 50%;
-      left: 7px;
-
-      display: block;
-
+    .user-nav__icon {
       width: 12px;
       height: 12px;
-
-      content: "";
-      transform: translateY(-50%);
-
-      background-image: url("../img/cart.svg");
     }
   }
 
@@ -125,5 +73,21 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+.user-nav__icon {
+  position: absolute;
+  top: 50%;
+  left: 7px;
+
+  transform: translateY(-50%);
+
+  fill: #000000;
+}
+
+.user-nav__link--white {
+  .user-nav__icon {
+    fill: #ffc600;
   }
 }
