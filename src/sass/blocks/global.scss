@@ -1,0 +1,28 @@
+html {
+  overflow-x: hidden;
+
+  box-sizing: border-box;
+  min-width: 1200px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  overflow-x: hidden;
+
+  box-sizing: border-box;
+  min-width: 1200px;
+
+  color: #000000;
+  background: #ffffff;
+
+  font-family: $font-f-main;
+}
+
+img {
+  max-width: 100%;
+}

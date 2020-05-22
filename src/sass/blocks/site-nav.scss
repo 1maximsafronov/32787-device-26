@@ -1,0 +1,58 @@
+.site-nav {
+  display: flex;
+}
+
+.site-nav__link {
+  align-items: center;
+
+  margin-right: 35px;
+
+  text-decoration: none;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+
+  color: #000000;
+
+  font-family: $font-f-secondary;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--sub-nav {
+    position: relative;
+
+    padding-right: 27px;
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      right: 0;
+
+      display: inline-block;
+
+      width: 16px;
+      height: 16px;
+
+      content: "";
+      transform: translateY(-50%);
+
+      opacity: 0.3;
+      background-image: url("../img/icon-plus.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+  }
+}
