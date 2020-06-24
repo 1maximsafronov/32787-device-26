@@ -50,7 +50,7 @@
 .catalog__sort {
   position: relative;
 
-  margin-bottom: 70px;
+  margin-bottom: 69px;
 
   &::before {
     position: absolute;
@@ -66,4 +66,19 @@
 
     background-color: rgba(#000000, 0.08);
   }
+}
+
+.catalog__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.catalog__item {
+  width: 360px;
 }
