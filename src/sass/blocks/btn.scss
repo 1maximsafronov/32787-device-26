@@ -1,21 +1,19 @@
 .btn {
   display: inline-block;
-
   padding: 8px;
 
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: $font-f-secondary;
   text-align: center;
+  color: #000000;
+  text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 3.5px;
-  text-transform: uppercase;
 
-  color: #000000;
-  border: none;
   background: linear-gradient(transparent 0%, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px, transparent 100%);
-
-  font-family: $font-f-secondary;
-  font-size: 18px;
-  font-weight: 800;
-  line-height: 24px;
+  border: none;
 
   &:hover,
   &:focus {

@@ -4,19 +4,16 @@
 
 .site-nav__link {
   align-items: center;
-
   margin-right: 35px;
 
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: $font-f-secondary;
+  color: #000000;
+  text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 3.6px;
-  text-transform: uppercase;
-
-  color: #000000;
-
-  font-family: $font-f-secondary;
-  font-size: 18px;
-  font-weight: 800;
-  line-height: 24px;
 
   &:last-child {
     margin-right: 0;
@@ -37,22 +34,20 @@
     padding-right: 27px;
 
     &::after {
+      content: "";
       position: absolute;
       top: 50%;
       right: 0;
 
       display: inline-block;
-
       width: 16px;
       height: 16px;
 
-      content: "";
-      transform: translateY(-50%);
-
-      opacity: 0.3;
       background-image: url("../img/icon-plus.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
+      transform: translateY(-50%);
+      opacity: 0.3;
     }
   }
 }
