@@ -1,0 +1,32 @@
+.site-nav {
+  list-style: none;
+
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  font-family: $font-f-secondary;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+
+  &--light {
+    color: #ffffff;
+
+    .site-nav__link {
+      color: #ffffff;
+    }
+  }
+}
+
+.site-nav__link {
+  color: #000000;
+
+  &[href]:hover,
+  &[href]:focus {
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
+}

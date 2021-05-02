@@ -1,0 +1,82 @@
+.sort-nav {
+  background-color: #ebebeb;
+}
+
+.sort-nav__title {
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  font-family: $font-f-secondary;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+}
+
+.sort-nav__type {
+  color: rgba(#000000, 0.3);
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.sort-nav__item {
+  color: rgba(#000000, 0.3);
+
+  &--active {
+    color: rgba(#000000, 1);
+  }
+
+  &:hover,
+  &:focus {
+    color: rgba(#000000, 0.6);
+  }
+
+  &:active {
+    color: rgba(#000000, 1);
+  }
+}
+
+.sort-nav__direction-up {
+  display: block;
+
+  width: 11px;
+  height: 10px;
+
+  opacity: 0.2;
+  background-image: url("../img/icon-up-dir.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  &:hover,
+  &:focus {
+    opacity: 0.4;
+  }
+
+  &:active,
+  &--active {
+    opacity: 1;
+  }
+}
+
+.sort-nav_direction-down {
+  display: block;
+
+  width: 11px;
+  height: 10px;
+
+  opacity: 0.2;
+  background-image: url("../img/icon-down-dir.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  &:hover,
+  &:focus {
+    opacity: 0.4;
+  }
+
+  &:active,
+  &--active {
+    opacity: 1;
+  }
+}

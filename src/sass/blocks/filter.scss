@@ -1,0 +1,20 @@
+.filter {
+  background-color: #efefef;
+}
+
+.filter__title {
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  font-family: $font-f-secondary;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+}
+
+.filter__section-title {
+  font-family: $font-f-secondary;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+}

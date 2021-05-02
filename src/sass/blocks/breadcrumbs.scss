@@ -1,0 +1,23 @@
+.breadcrumbs {
+  list-style: none;
+
+  letter-spacing: 0.14px;
+
+  color: rgba(#000000, 0.3);
+
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.breadcrumbs__link {
+  color: rgba(#000000, 0.3);
+
+  &[href]:hover,
+  &[href]:focus {
+    color: rgba(#000000, 0.6);
+  }
+
+  &[href]:active {
+    color: rgba(#000000, 0.1);
+  }
+}

@@ -1,0 +1,47 @@
+.product__popup {
+  background-color: rgba(#eeeeee, 0.7);
+}
+
+.product_desc {
+  font-family: $font-f-secondary;
+  line-height: 24px;
+}
+
+.product__title {
+  letter-spacing: 0.18px;
+
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.product__link {
+  color: #000000;
+}
+
+.product__price {
+  color: #464646;
+
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.product__compare {
+  cursor: pointer;
+
+  opacity: 0.5;
+  color: #000000;
+  border: none;
+  background-color: transparent;
+
+  font-size: 13px;
+  line-height: 20px;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
+}

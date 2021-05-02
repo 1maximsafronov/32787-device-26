@@ -1,0 +1,37 @@
+.product-categories__list {
+  list-style: none;
+
+  font-family: $font-f-secondary;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+}
+
+.product-categories__link {
+  color: #000000;
+
+  &:hover,
+  &:focus {
+    .product-categories__icon {
+      background-color: rgba(#f0c52e, 1);
+    }
+  }
+
+  &:active {
+    .product-categories__icon {
+      background-color: rgba(#f0c52e, 1);
+    }
+
+    .product-categories__image {
+      opacity: 0.5;
+    }
+
+    .product-categories__title {
+      opacity: 0.5;
+    }
+  }
+}
+
+.product-categories__icon {
+  background-color: rgba(#f0c52e, 0.5);
+}

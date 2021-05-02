@@ -1,0 +1,25 @@
+.custom-checkbox {
+  font-size: 14px;
+  line-height: 40px;
+
+  input,
+  label {
+    cursor: pointer;
+  }
+
+  &--disabled input + label,
+  input:disabled + label {
+    cursor: not-allowed;
+
+    color: #a6a6a6;
+
+    &:hover,
+    &:focus {
+      color: #a6a6a6;
+    }
+
+    &:active {
+      color: #a6a6a6;
+    }
+  }
+}

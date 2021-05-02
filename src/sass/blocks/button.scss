@@ -1,0 +1,47 @@
+.button {
+  position: relative;
+  z-index: 1;
+
+  display: inline-block;
+
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  color: #000000;
+  border: none;
+  background-color: transparent;
+
+  font-family: $font-f-secondary;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    right: 0;
+    left: 0;
+
+    display: block;
+
+    height: 8px;
+
+    content: "";
+    transform: translateY(-50%);
+
+    background-color: #f0c52e;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #f0c52e;
+  }
+
+  &:active {
+    color: rgba(#000000, 0.3);
+  }
+}

@@ -1,0 +1,24 @@
+.user-nav {
+  list-style: none;
+
+  &--light {
+    color: #ffffff;
+
+    .user-nav__link {
+      color: #ffffff;
+    }
+  }
+}
+
+.user-nav__link {
+  color: #000000;
+
+  &[href]:hover,
+  &[href]:focus {
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
+}
