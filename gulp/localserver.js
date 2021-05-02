@@ -3,6 +3,7 @@ const css = require(`./css`);
 const html = require(`./html`);
 const copy = require(`./copy`);
 const server = require(`browser-sync`).create();
+const svgsprite = require(`./svgsprite`);
 
 function refresh(done) {
   server.reload();
@@ -19,7 +20,7 @@ module.exports = function localserver() {
   });
 
   gulp.watch(`src/*.html`, gulp.series(html, refresh));
-  gulp.watch(`src/img/icon-*.svg`, gulp.series(html, refresh));
+  gulp.watch(`src/img/icon-*.svg`, gulp.series(svgsprite, html, refresh));
   gulp.watch(`src/sass/**/*.{scss,sass}`, gulp.series(css, refresh));
   gulp.watch(`src/js/*.js`, gulp.series(copy, refresh));
 };

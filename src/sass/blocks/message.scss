@@ -1,0 +1,29 @@
+.message {
+  width: 960px;
+  padding-top: 90px;
+  padding-right: 100px;
+  padding-bottom: 90px;
+  padding-left: 100px;
+}
+
+.message__form {
+  margin: 0;
+  padding: 0;
+}
+
+.message__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 30px;
+}
+
+.message__textbox {
+  width: 360px;
+  margin: 0;
+}
+
+.message__textarea {
+  margin: 0;
+  margin-bottom: 30px;
+}

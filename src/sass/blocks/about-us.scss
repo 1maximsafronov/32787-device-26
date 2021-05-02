@@ -1,10 +1,51 @@
+.about-us {
+  position: relative;
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  padding-top: 40px;
+  padding-bottom: 90px;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 80px;
+    height: 7px;
+
+    content: "";
+
+    background-color: #000000;
+  }
+}
+
+.about-us__title {
+  margin: 0;
+  margin-bottom: 50px;
+}
+
 .about-us__desc {
+  margin: 0;
+  margin-bottom: 40px;
+
   color: #464646;
 }
 
 .about-us__transport-companies {
+  margin: 0;
+  margin-bottom: 80px;
+
   font-family: $font-f-secondary;
   font-size: 16px;
   font-weight: 800;
   line-height: 40px;
+}
+
+.about-us__more-info {
+  margin-top: auto;
 }

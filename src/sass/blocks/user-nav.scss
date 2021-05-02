@@ -1,4 +1,8 @@
 .user-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
   list-style: none;
 
   &--light {
@@ -7,10 +11,28 @@
     .user-nav__link {
       color: #ffffff;
     }
+
+    .user-nav__icon {
+      fill: #ffc600;
+    }
+  }
+}
+
+.user-nav__item {
+  margin-right: 38px;
+
+  &:last-child {
+    margin-right: 0;
   }
 }
 
 .user-nav__link {
+  position: relative;
+
+  display: block;
+
+  padding-left: 27px;
+
   color: #000000;
 
   &[href]:hover,
@@ -21,4 +43,15 @@
   &[href]:active {
     opacity: 0.3;
   }
+}
+
+
+.user-nav__icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  margin-right: 10px;
+
+  transform: translateY(-50%);
 }
