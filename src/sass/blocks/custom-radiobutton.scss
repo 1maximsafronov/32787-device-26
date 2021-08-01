@@ -1,25 +1,81 @@
 .custom-radiobutton {
-  font-size: 14px;
-  line-height: 40px;
+  position: relative;
 
-  input,
-  label {
-    cursor: pointer;
+  padding-left: 40px;
+
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    top: calc(50% - 12px);
+    left: 0;
+
+    display: block;
+
+    width: 25px;
+    height: 25px;
+
+    content: "";
+
+    background-image: url("../img/icon-radio-off.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
   }
 
-  &--disabled input + label,
-  input:disabled + label {
-    cursor: not-allowed;
+  input:hover + &,
+  input:focus + &,
+  &:hover,
+  &:focus {
+    &::before {
+      opacity: 0.6;
+    }
+  }
 
-    color: #a6a6a6;
+  input:active + &,
+  &:active {
+    &::before {
+      opacity: 1;
+      background-image: url("../img/icon-radio-on.svg");
+    }
+  }
 
-    &:hover,
-    &:focus {
-      color: #a6a6a6;
+  input:checked + & {
+    &::before {
+      background-image: url("../img/icon-radio-on.svg");
     }
 
     &:active {
-      color: #a6a6a6;
+      &::before {
+        background-image: url("../img/icon-radio-off.svg");
+      }
+    }
+  }
+}
+
+.custom-radiobutton--disabled,
+input:disabled + .custom-radiobutton {
+  cursor: not-allowed;
+
+  color: #a6a6a6;
+
+  &::before {
+    opacity: 0.25;
+  }
+
+  &:hover,
+  &:focus {
+    color: #a6a6a6;
+
+    &::before {
+      opacity: 0.25;
+    }
+  }
+
+  &:active {
+    color: #a6a6a6;
+
+    &::before {
+      opacity: 0.25;
     }
   }
 }
