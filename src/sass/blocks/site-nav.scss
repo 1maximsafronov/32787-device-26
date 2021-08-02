@@ -3,6 +3,8 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
+  width: 100%;
+
   list-style: none;
 
   letter-spacing: 0.2em;
@@ -27,17 +29,42 @@
 .site-nav__item {
   margin-right: 38px;
 
+  &--catalog {
+    width: 520px;
+    margin-right: 20px;
+  }
+
+  &--contacts {
+    margin-left: auto;
+  }
+
   &:last-child {
     margin-right: 0;
   }
 }
 
 .site-nav__link {
-  display: block;
-
-  text-align: right;
-
   color: #000000;
+
+  &--catalog {
+    display: flex;
+    align-items: center;
+
+    &::after {
+      display: block;
+
+      width: 16px;
+      height: 16px;
+      margin-left: 16px;
+
+      content: "";
+
+      opacity: 0.3;
+      background-image: url("../img/icon-plus.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+  }
 
   &[href]:hover,
   &[href]:focus {
@@ -47,4 +74,24 @@
   &[href]:active {
     opacity: 0.3;
   }
+}
+
+.site-nav__item--catalog:hover + .site-nav__catalog-nav {
+  display: block;
+}
+
+.site-nav__catalog-nav {
+  position: absolute;
+  z-index: 2;
+  top: 100%;
+  right: 0;
+  left: 0;
+
+  display: none;
+
+  width: 100%;
+  min-height: 130px;
+  padding-right: 60px;
+  padding-bottom: 22px;
+  padding-left: 60px;
 }

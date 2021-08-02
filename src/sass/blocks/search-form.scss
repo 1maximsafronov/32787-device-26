@@ -17,6 +17,7 @@
 
   border: none;
   border-bottom: 2px solid #f7e296;
+  border-radius: 0;
   background-color: transparent;
   background-image: url("../img/icon-search.svg");
   background-repeat: no-repeat;
@@ -38,13 +39,13 @@
 
   &:focus {
     border-color: #000000;
+    outline: none;
 
     &::placeholder {
       color: rgba(#000000, 1);
     }
   }
 }
-
 
 .search-form__button {
   display: none;
@@ -60,6 +61,7 @@
   vertical-align: middle;
 
   border: 2px solid #000000;
+  border-radius: 0;
   background-color: transparent;
 
   font-size: 15px;

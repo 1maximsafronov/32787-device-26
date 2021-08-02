@@ -1,53 +1,32 @@
-.catalog-nav__item {
-  display: flex;
-  align-items: center;
+.catalog-nav {
+  letter-spacing: 0.01em;
+  text-transform: none;
 
-  list-style: none;
+  background-color: #f7e296;
 
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-
-  color: #000000;
-
-  font-family: $font-f-secondary;
-  font-size: 18px;
-  font-weight: 800;
-  line-height: 24px;
-
-  &::after {
-    display: block;
-
-    width: 16px;
-    height: 16px;
-    margin-left: 16px;
-
-    content: "";
-
-    opacity: 0.3;
-    background-image: url("../img/icon-plus.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
-
-  &[href]:hover,
-  &[href]:focus {
-    opacity: 0.6;
-  }
-
-  &[href]:active {
-    opacity: 0.3;
-  }
-}
-
-.catalog-nav__sub-nav {
-  display: none;
-
-  list-style: none;
-
+  font-size: 15px;
+  font-weight: 300;
   line-height: 36px;
 }
 
-.catalog-nav__sub-nav-link {
+.catalog-nav__wrapper {
+  display: flex;
+}
+
+.catalog-nav__list {
+  min-width: 200px;
+  margin: 0;
+  margin-right: 40px;
+  padding: 0;
+
+  list-style: none;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.catalog-nav__link {
   color: #000000;
 
   &[href]:hover,
