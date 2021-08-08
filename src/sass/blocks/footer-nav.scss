@@ -1,0 +1,41 @@
+.footer-nav {
+  display: flex;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  color: $color-basic-white;
+
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 22px;
+}
+
+.footer-nav__item {
+  margin-right: 36px;
+
+  a {
+    color: inherit;
+  }
+
+  a[href] {
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
