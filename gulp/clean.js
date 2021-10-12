@@ -1,5 +1,7 @@
 const del = require(`del`);
 
-module.exports = function clean() {
+const clean = () => {
   return del(`build`);
-};
+}
+
+module.exports = clean;
