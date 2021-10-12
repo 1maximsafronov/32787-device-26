@@ -3,12 +3,17 @@ $font-f-secondary: "Gilroy", "Arial", sans-serif;
 
 // <--- Colors -- >
 $color-basic-black: #000000;
+$color-basic-black-opacity-30: rgba(#000000, 0.3);
+$color-basic-black-opacity-40: rgba(#000000, 0.3);
 $color-basic-dark: #363636;
 $color-basic-grey: #464646;
 $color-basic-half-grey: #7e7e7e;
 $color-basic-grey-light: #e5e5e5;
 $color-basic-white: #ffffff;
+$color-basic-white-opacity-30: rgba(#ffffff, 0.3);
+$color-basic-white-opacity-60: rgba(#ffffff, 0.6);
+$color-basic-white-opacity-70: rgba(#ffffff, 0.7);
 $color-special-yellow: #f7e296;
-$color-special-green: #91c92f;
 $color-special-yellow-dark: #f0c52e;
+$color-special-green: #91c92f;
 $color-alert: #f6dada;
