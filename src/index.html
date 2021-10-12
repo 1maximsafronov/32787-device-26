@@ -81,7 +81,7 @@
 
   <main class="page-main">
     <h1 class="visually-hidden">Девайс - Интернет-магазин гаджетов</h1>
-    <section class="promo" style="display: none;">
+    <section class="page-main__promo promo" style="display: none;">
       <h2 class="visually-hidden">Популярные товары</h2>
       <ul class="promo__list">
         <li class="promo__item promo-product">
@@ -144,7 +144,7 @@
       </ul>
     </section>
 
-    <section class="popular container">
+    <section class="page-main__popular popular container">
       <h2 class="visually-hidden">Популярные категории товаров</h2>
       <ul class="popular__list">
         <li class="popular__item">
@@ -200,7 +200,7 @@
       </ul>
     </section>
 
-    <section class="services" style="display: none;">
+    <section class="page-main__services services" style="display: none;">
       <h2 class="visually-hidden">Наши услуги</h2>
       <div class="services__wrapper">
         <ul class="services__nav">
@@ -228,7 +228,7 @@
       </div>
     </section>
 
-    <section class="brands container">
+    <section class="page-main__brands brands container">
       <h2 class="visually-hidden">Представленнные у нас бренды</h2>
       <ul class="brands__list">
         <li class="brands__item">
@@ -254,11 +254,12 @@
       </ul>
     </section>
 
-    <div>
-      <section class="about-us" style="display: none;">
+    <div class="page-main__columns container">
+      <section class="page-main__about-us about-us">
         <h2 class="about-us__title">О нас</h2>
         <p class="about-us__text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-        <p class="about-us__text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со
+        <p class="about-us__text about-us__text--mb-60">Мы можем доставить ваш товар в самые отдаленные точки России!
+          DEVICE работает со
           многими транспортными компаниями:</p>
         <ul class="about-us__partners-list">
           <li class="about-us__partners-item">Деловые линии</li>
@@ -268,8 +269,8 @@
         <a class="about-us__read-more" href="#">Подробнее о нас</a>
       </section>
 
-      <section class="contact" style="display: none;">
-        <h2 class="contact">Контакты</h2>
+      <section class="page-main__contact contact">
+        <h2 class="contact__title">Контакты</h2>
         <p class="contact__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
           работоспособность покупки. Всякое бывает.</p>
         <a class="contact__map" href="#">
