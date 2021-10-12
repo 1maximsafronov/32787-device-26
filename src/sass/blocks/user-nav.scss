@@ -8,6 +8,31 @@
   list-style: none;
 
   color: $color-basic-black;
+
+  &--light {
+    color: $color-basic-white-opacity-70;
+
+    .user-nav__link,
+    .user-nav__link--logout {
+      color: $color-basic-white-opacity-70;
+    }
+
+    .user-nav__link:hover,
+    .user-nav__link:focus,
+    .user-nav__link--logout:hover,
+    .user-nav__link--logout:focus {
+      color: $color-basic-white;
+    }
+
+    .user-nav__link:active,
+    .user-nav__link--logout:active {
+      color: $color-basic-white-opacity-30;
+    }
+
+    .user-nav__icon {
+      fill: $color-special-yellow-dark;
+    }
+  }
 }
 
 .user-nav__item {
@@ -30,10 +55,18 @@
   &:hover,
   &:focus {
     color: $color-basic-black-opacity-60;
+
+    .user-nav__icon {
+      opacity: 0.6;
+    }
   }
 
   &:active {
     color: $color-basic-black-opacity-30;
+
+    .user-nav__icon {
+      opacity: 0.3;
+    }
   }
 
   &--logout {

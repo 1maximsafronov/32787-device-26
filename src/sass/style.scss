@@ -7,10 +7,14 @@
 
 // Blocks
 @import "blocks/visually-hidden.scss";
+@import "blocks/container.scss";
 @import "blocks/page-header.scss";
+@import "blocks/page-footer.scss";
+//
+@import "blocks/logotype.scss";
 @import "blocks/user-nav.scss";
 @import "blocks/catalog-nav.scss";
 @import "blocks/sub-nav.scss";
 @import "blocks/site-nav.scss";
 @import "blocks/search-form.scss";
-@import "blocks/logotype.scss";
+@import "blocks/social.scss";
