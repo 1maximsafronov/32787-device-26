@@ -1,0 +1,36 @@
+.sub-nav {
+  width: 1160px;
+
+  background-color: $color-special-yellow;
+}
+
+.sub-nav__wrapper {
+  display: flex;
+
+  padding-top: 12px;
+  padding-right: 60px;
+  padding-bottom: 42px;
+  padding-left: 60px;
+}
+
+.sub-nav__list {
+  flex-shrink: 0;
+
+  margin: 0;
+  margin-right: 60px;
+  padding: 0;
+
+  list-style: none;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.sub-nav__item {
+  margin-bottom: 16px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

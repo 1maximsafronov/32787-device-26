@@ -3,7 +3,14 @@
 @import "global/fonts.scss";
 @import "global/variables.scss";
 @import "global/global.scss";
-@import "outline-bg.scss";
+// @import "outline.scss";
 
 // Blocks
 @import "blocks/visually-hidden.scss";
+@import "blocks/page-header.scss";
+@import "blocks/user-nav.scss";
+@import "blocks/catalog-nav.scss";
+@import "blocks/sub-nav.scss";
+@import "blocks/site-nav.scss";
+@import "blocks/search-form.scss";
+@import "blocks/logotype.scss";
