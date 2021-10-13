@@ -3,7 +3,7 @@
 @import "global/fonts.scss";
 @import "global/variables.scss";
 @import "global/global.scss";
-// @import "outline.scss";
+@import "outline.scss";
 
 // Blocks
 @import "blocks/visually-hidden.scss";
@@ -19,7 +19,10 @@
 @import "blocks/site-nav.scss";
 @import "blocks/search-form.scss";
 @import "blocks/social.scss";
+
+// Index page
 @import "blocks/popular.scss";
+@import "blocks/services.scss";
 @import "blocks/brands.scss";
 @import "blocks/about-us.scss";
 @import "blocks/contact.scss";
