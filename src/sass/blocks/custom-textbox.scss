@@ -1,0 +1,38 @@
+.custom-textbox {
+  display: block;
+
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 17px;
+  padding-right: 20px;
+  padding-bottom: 17px;
+  padding-left: 20px;
+
+  color: $color-basic-dark;
+  border: none;
+  border-radius: 0;
+  background-color: #f2f2f2;
+
+  font-family: $font-f-secondary;
+  font-size: 14px;
+  line-height: 16px;
+
+  &::placeholder {
+    color: $color-basic-black-opacity-40;
+  }
+
+  &:hover {
+    background-color: #eaeaea;
+  }
+
+  &:focus {
+    background-color: $color-basic-white;
+    box-shadow: inset 0 0 0 2px $color-special-yellow;
+  }
+
+  &:invalid {
+    background-color: $color-alert;
+    box-shadow: none;
+  }
+}

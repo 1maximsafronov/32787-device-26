@@ -366,6 +366,35 @@
       </div>
     </div>
   </footer>
+
+  <section class="modal modal--map">
+    <button class="modal__close-btn" type="button"><span class="visually-hidden">Закрыть окно</span></button>
+  </section>
+
+  <section class="modal modal--write-us write-us">
+    <h2 class="visually-hidden">Напишите нам</h2>
+    <form class="write-us__form" name="write-us-form" id="write-us-form" action="#" method="post">
+      <div class="write-uswrite-us__columns">
+        <p class="write-us__textbox write-us__username">
+          <label class="write-us__title" for="write-us-form-username">Ваше имя:</label>
+          <input class="custom-textbox" type="text" name="write-us-form-username" id="write-us-form-username"
+            placeholder="Имя Фамилия">
+        </p>
+        <p class="write-us__textbox write-us__email">
+          <label class="write-us__title" for="write-us-form-email">Ваш e-mail:</label>
+          <input class="custom-textbox" type="email" name="write-us-form-email" id="write-us-form-email"
+            placeholder="email@example.com">
+        </p>
+      </div>
+      <p class="write-us__message">
+        <label class="write-us__title" for="">Текст письма:</label>
+        <textarea class="custom-textbox" height="167" name="" id="" cols="30" rows="10"
+          placeholder="В свободной форме"></textarea>
+      </p>
+      <button class="write-us__submit" type="submit">Отправить</button>
+    </form>
+    <button class="modal__close-btn" type="button"><span class="visually-hidden">Закрыть окно</span></button>
+  </section>
   <script src="js/script.min.js"></script>
 </body>
 
