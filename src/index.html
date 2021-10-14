@@ -85,67 +85,85 @@
 
   <main class="page-main">
     <h1 class="visually-hidden">Девайс - Интернет-магазин гаджетов</h1>
-    <section class="page-main__promo promo" style="display: none;">
+
+    <section class="page-main__promo promo container">
       <h2 class="visually-hidden">Популярные товары</h2>
       <ul class="promo__list">
-        <li class="promo__item promo-product">
-          <p class="promo-product__picture"><img src="img/slider-1.png" alt="Делай селфи, как Бен Стиллер!"></p>
-          <div class="promo-product__info">
-            <h3 class="promo-product__title">Делай селфи, как Бен Стиллер!</h3>
-            <p class="promo-product__text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь,
-              Карл!) метров длиной и весом всего 5 килограмм.</p>
-            <a href="#" class="promo-product__read-more">Подробнее</a>
-            <dl class="promo-product__features">
-              <div class="promo-product__features-item">
-                <dt class="promo-product__features-name">Длина палки</dt>
-                <dd class="promo-product__features-value">8,5 м</dd>
-              </div>
-              <div class="promo-product__features-item">
-                <dt class="promo-product__features-name">Вес палки</dt>
-                <dd class="promo-product__features-value">5 кг</dd>
-              </div>
-              <div class="promo-product__features-item">
-                <dt class="promo-product__features-name">Материал</dt>
-                <dd class="promo-product__features-value">Карбон</dd>
-              </div>
-            </dl>
+        <li class="promo__item  promo-product">
+          <div class="promo-product__wrapper">
+            <p class="promo-product__picture"><img src="img/slider-1.png" alt="Делай селфи, как Бен Стиллер!"></p>
+            <div class="promo-product__info">
+              <p class="promo-product__counter">01</p>
+              <h3 class="promo-product__title">Делай селфи,<br> как Бен Стиллер!</h3>
+              <p class="promo-product__text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь,
+                Карл!) метров длиной и весом всего 5 килограмм.</p>
+              <a href="#" class="promo-product__read-more">Подробнее</a>
+              <dl class="promo-product__features">
+                <div class="promo-product__features-item">
+                  <dt class="promo-product__features-name">Длина палки</dt>
+                  <dd class="promo-product__features-value">8,5 м</dd>
+                </div>
+                <div class="promo-product__features-item">
+                  <dt class="promo-product__features-name">Вес палки</dt>
+                  <dd class="promo-product__features-value">5 кг</dd>
+                </div>
+                <div class="promo-product__features-item">
+                  <dt class="promo-product__features-name">Материал</dt>
+                  <dd class="promo-product__features-value">Карбон</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </li>
+        <li class="promo__item promo__item--current promo-product">
+          <div class="promo-product__wrapper">
+            <p class="promo-product__picture"><img src="img/slider-2.png" alt="Худеем правильно!"></p>
+            <div class="promo-product__info">
+              <p class="promo-product__counter">02</p>
+              <h3 class="promo-product__title">Худеем<br> правильно!</h3>
+              <p class="promo-product__text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
+                занятия
+                и соблюдать диету.</p>
+              <a href="#" class="promo-product__read-more">Подробнее</a>
+              <dl class="promo-product__features">
+                <div class="promo-product__features-item">
+                  <dt class="promo-product__features-name">Без подзарядки</dt>
+                  <dd class="promo-product__features-value">48 часов</dd>
+                </div>
+              </dl>
+            </div>
           </div>
         </li>
         <li class="promo__item promo-product">
-          <p class="promo-product__picture"><img src="img/slider-2.png" alt="Худеем правильно!"></p>
-          <div class="promo-product__info">
-            <h3 class="promo-product__title">Худеем правильно!</h3>
-            <p class="promo-product__text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия
-              и соблюдать диету.</p>
-            <a href="#" class="promo-product__read-more">Подробнее</a>
-            <dl class="promo-product__features">
-              <div class="promo-product__features-item">
-                <dt class="promo-product__features-name">Без подзарядки</dt>
-                <dd class="promo-product__features-value">48 часов</dd>
-              </div>
-            </dl>
-          </div>
-        </li>
-        <li class="promo__item promo-product">
-          <p class="promo-product__picture"><img src="img/slider-3.png" alt="Порхает как бабочка, жалит как пчела!"></p>
-          <div class="promo-product__info">
-            <h3 class="promo-product__title">Порхает как бабочка, жалит как пчела!</h3>
-            <p class="promo-product__text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
-              замаскированным под стандартную камеру.</p>
-            <a href="#" class="promo-product__read-more">Подробнее</a>
-            <dl class="promo-product__features">
-              <div class="promo-product__features-item">
-                <dt class="promo-product__features-name">Дальность полета</dt>
-                <dd class="promo-product__features-value">800 м</dd>
-              </div>
-              <div class="promo-product__features-item">
-                <dt class="promo-product__features-name">Радиус поражения</dt>
-                <dd class="promo-product__features-value">50 м</dd>
-              </div>
-            </dl>
+          <div class="promo-product__wrapper">
+            <p class="promo-product__picture"><img src="img/slider-3.png" alt="Порхает как бабочка, жалит как пчела!">
+            </p>
+            <div class="promo-product__info">
+              <p class="promo-product__counter">02</p>
+              <h3 class="promo-product__title">Порхает как бабочка, жалит как пчела!</h3>
+              <p class="promo-product__text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+                замаскированным под стандартную камеру.</p>
+              <a href="#" class="promo-product__read-more">Подробнее</a>
+              <dl class="promo-product__features">
+                <div class="promo-product__features-item">
+                  <dt class="promo-product__features-name">Дальность полета</dt>
+                  <dd class="promo-product__features-value">800 м</dd>
+                </div>
+                <div class="promo-product__features-item">
+                  <dt class="promo-product__features-name">Радиус поражения</dt>
+                  <dd class="promo-product__features-value">50 м</dd>
+                </div>
+              </dl>
+            </div>
           </div>
         </li>
       </ul>
+      <div class="promo__controls">
+        <button class="promo__toggl promo__toggl--active" type="button"><span class="visually-hidden">Слайд
+            1</span></button>
+        <button class="promo__toggl" type="button"><span class="visually-hidden">Слайд 2</span></button>
+        <button class="promo__toggl" type="button"><span class="visually-hidden">Слайд 3</span></button>
+      </div>
     </section>
 
     <section class="page-main__popular popular container">

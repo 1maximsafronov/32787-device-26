@@ -1,0 +1,69 @@
+.promo {
+  position: relative;
+
+  margin-bottom: 75px;
+}
+
+.promo__list {
+  display: flex;
+  overflow-x: hidden;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.promo__item {
+  flex-shrink: 0;
+  order: 2;
+
+  width: 100%;
+
+  &--current {
+    order: 1;
+  }
+}
+
+.promo__controls {
+  position: absolute;
+  right: 108px;
+  bottom: 157px;
+
+  display: flex;
+}
+
+.promo__toggl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  margin-right: 18px;
+  padding: 0;
+
+  cursor: pointer;
+
+  border: 1px solid $color-basic-black;
+  border-radius: 50%;
+  background-color: transparent;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--active {
+    &::before {
+      display: block;
+
+      width: 6px;
+      height: 6px;
+
+      content: "";
+
+      border: 1px solid $color-basic-black;
+    }
+  }
+}
