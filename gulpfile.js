@@ -32,7 +32,7 @@ const server = (done) => {
 
 const watcher = () => {
   gulp.watch("src/*.html", gulp.series(html, reload));
-  gulp.watch("src/sass/**/*.scss", gulp.series(styles));
+  gulp.watch("src/sass/**/*.scss", gulp.series(styles, reload));
   gulp.watch("src/js/*.js", gulp.series(scripts, reload));
 }
 

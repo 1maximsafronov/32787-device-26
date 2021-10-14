@@ -3,7 +3,7 @@
 @import "global/fonts.scss";
 @import "global/variables.scss";
 @import "global/global.scss";
-@import "outline.scss";
+// @import "outline.scss";
 
 // Blocks
 @import "blocks/visually-hidden.scss";
@@ -19,6 +19,9 @@
 @import "blocks/site-nav.scss";
 @import "blocks/search-form.scss";
 @import "blocks/social.scss";
+@import "blocks/custom-checkbox.scss";
+@import "blocks/custom-radio-btn.scss";
+@import "blocks/custom-range.scss";
 
 // Index page
 @import "blocks/popular.scss";
@@ -30,6 +33,7 @@
 // Catalog
 @import "blocks/catalog.scss";
 @import "blocks/breadcrumbs.scss";
+@import "blocks/filter-form.scss";
+@import "blocks/catalog-sort.scss";
 @import "blocks/product.scss";
 @import "blocks/pagination.scss";
-@import "blocks/catalog-sort.scss";

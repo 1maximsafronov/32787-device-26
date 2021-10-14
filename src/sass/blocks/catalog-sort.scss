@@ -28,6 +28,8 @@
 }
 
 .catalog-sort__title {
+  margin: 0;
+
   letter-spacing: 0.1em;
   text-transform: uppercase;
 
@@ -89,6 +91,8 @@
   margin: 0;
   margin-left: 16px;
   padding: 0;
+
+  cursor: pointer;
 
   opacity: 0.2;
   border: none;

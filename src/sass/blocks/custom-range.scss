@@ -1,0 +1,61 @@
+.custom-range {
+  display: flex;
+  align-items: center;
+
+  height: 20px;
+}
+
+.custom-range__scale {
+  position: relative;
+
+  width: 100%;
+  height: 2px;
+
+  background-color: $color-basic-black-opacity-20;
+}
+
+.custom-range__bar {
+  position: absolute;
+  top: 0;
+  right: 86px;
+  bottom: 0;
+  left: 18px;
+
+  background-color: $color-special-green;
+}
+
+.custom-range__toggle {
+  position: absolute;
+  top: 50%;
+
+  display: block;
+
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+
+  cursor: pointer;
+  transform: translateY(-50%);
+
+  border: 8px solid $color-basic-white;
+  border-radius: 50%;
+  background-color: #c4c4c4;
+  box-shadow: 0 2px 2px $color-basic-black-opacity-20;
+
+  font-size: 0;
+  line-height: 0;
+
+  &--min {
+    left: 0;
+  }
+
+  &--max {
+    left: 114px;
+  }
+
+  &:hover,
+  &:focus {
+    transform: translateY(-50%) scale(1.1);
+  }
+}
