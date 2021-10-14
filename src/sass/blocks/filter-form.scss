@@ -112,7 +112,7 @@
   }
 }
 
-.filter__submit {
+.filter-form__submit {
   position: relative;
   z-index: 1;
 
@@ -166,12 +166,12 @@
   }
 }
 
-.filter__range {
+.filter-form__range {
   margin: 0;
   margin-bottom: 8px;
 }
 
-.filter__price {
+.filter-form__price {
   display: flex;
   justify-content: space-between;
 
@@ -181,7 +181,7 @@
   line-height: 16px;
 }
 
-.filter__price-value {
+.filter-form__price-value {
   width: 90px;
   margin: 0;
   padding: 0;

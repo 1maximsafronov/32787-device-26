@@ -98,12 +98,12 @@
       </div>
 
       <div class="catalog__columns">
-        <form class="catalog__filter-form filter-form" action="" method="get">
+        <form class="catalog__filter-form filter-form" action="https://echo.htmlacademy.ru" method="get">
           <h2 class="filter-form__title">Фильтр:</h2>
 
           <div class="filter-form__item">
             <h3 class="filter-form__subtitle">Стоимость</h3>
-            <div class="filter__range custom-range">
+            <div class="filter-form__range custom-range">
               <div class="custom-range__scale">
                 <div class="custom-range__bar"></div>
                 <button class="custom-range__toggle custom-range__toggle--min" type="button">
@@ -114,9 +114,14 @@
                 </button>
               </div>
             </div>
-            <div class="filter__price">
-              <p class="filter__price-value">от 0</p>
-              <p class="filter__price-value">до 5000</p>
+            <div class="filter-form__price">
+              <p class="filter-form__price-value">от 0
+                <input id="filter-form-min-price" name="filter-form-min-price" type="number" hidden value="0">
+              </p>
+              <p class="filter-form__price-value">
+                до 5000
+                <input id="filter-form-max-price" name="filter-form-max-price" type="number" hidden value="5000">
+              </p>
             </div>
           </div>
 
@@ -171,7 +176,7 @@
             </ul>
           </fieldset>
 
-          <button class="filter__submit" type="submit">Показать</button>
+          <button class="filter-form__submit" type="submit">Показать</button>
         </form>
 
         <div class="catalog__content">
