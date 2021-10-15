@@ -56,3 +56,18 @@ input:active + .custom-radio-btn {
     background-image: url("../img/icon-radio-on.svg");
   }
 }
+
+input:disabled + .custom-radio-btn,
+input:disabled:focus + .custom-radio-btn,
+input:disabled:active + .custom-radio-btn {
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 0.25;
+
+    &::before {
+      opacity: 0.25;
+    }
+  }
+}

@@ -56,3 +56,18 @@ input:active + .custom-checkbox {
     background-image: url("../img/icon-check.svg");
   }
 }
+
+input:disabled + .custom-checkbox,
+input:disabled:focus + .custom-checkbox,
+input:disabled:active + .custom-checkbox {
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 0.25;
+
+    &::before {
+      opacity: 0.25;
+    }
+  }
+}
