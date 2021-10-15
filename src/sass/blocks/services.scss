@@ -40,6 +40,9 @@
 }
 
 .services__nav-item {
+  position: relative;
+  z-index: 1;
+
   margin-bottom: 21px;
 
   &:last-child {
@@ -100,17 +103,56 @@
   }
 
   &:active {
+    position: static;
+
     color: $color-special-yellow;
     background-color: $color-basic-black;
 
     &::before {
-      display: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      display: block;
+
+      width: auto;
+      height: auto;
+
+      background-color: $color-basic-black;
+    }
+  }
+
+  &--current,
+  &--current:hover,
+  &--current:focus,
+  &--current:active {
+    position: static;
+
+    color: $color-special-yellow;
+    background-color: $color-basic-black;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      display: block;
+
+      width: auto;
+      height: auto;
+
+      background-color: $color-basic-black;
     }
   }
 }
 
 .services__list {
   display: flex;
+  overflow: hidden;
 
   width: 760px;
   margin: 0;
@@ -120,13 +162,30 @@
 }
 
 .services__item {
-  display: none;
+  flex-shrink: 0;
+  order: 2;
 
+  width: 100%;
   padding-top: 71px;
   padding-right: 160px;
 
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+
+  &--credit {
+    background-image: url("../img/credit.svg");
+  }
+
+  &--delivery {
+    background-image: url("../img/delivery.svg");
+  }
+
+  &--warranty {
+    background-image: url("../img/warranty.svg");
+  }
+
   &--current {
-    display: block;
+    order: 1;
   }
 }
 
