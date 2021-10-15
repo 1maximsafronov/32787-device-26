@@ -1,0 +1,210 @@
+.services {
+  position: relative;
+
+  margin-bottom: 90px;
+
+  &::after {
+    position: absolute;
+    z-index: -1;
+    top: 115px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    content: "";
+
+    background-color: $color-basic-grey-light;
+  }
+}
+
+.services__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 15px;
+  padding-bottom: 69px;
+}
+
+.services__nav {
+  width: 284px;
+  margin: 0;
+  padding: 0;
+  padding-top: 80px;
+  padding-bottom: 77px;
+
+  list-style: none;
+
+  border-right: 7px solid $color-basic-black;
+}
+
+.services__nav-item {
+  position: relative;
+  z-index: 1;
+
+  margin-bottom: 21px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.services__nav-btn {
+  position: relative;
+  z-index: 1;
+
+  display: inline-block;
+
+  min-width: 160px;
+  margin: 0;
+  padding: 0;
+  padding-top: 9px;
+  padding-right: 15px;
+  padding-bottom: 9px;
+  padding-left: 15px;
+
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  color: $color-basic-black;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+
+  font-family: $font-f-secondary;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 22px;
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+    top: calc(50% - 4px);
+    right: 0;
+    left: 0;
+
+    height: 8px;
+
+    content: "";
+
+    background-color: $color-special-yellow-dark;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-special-yellow-dark;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  &:active {
+    position: static;
+
+    color: $color-special-yellow;
+    background-color: $color-basic-black;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      display: block;
+
+      width: auto;
+      height: auto;
+
+      background-color: $color-basic-black;
+    }
+  }
+
+  &--current,
+  &--current:hover,
+  &--current:focus,
+  &--current:active {
+    position: static;
+
+    color: $color-special-yellow;
+    background-color: $color-basic-black;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      display: block;
+
+      width: auto;
+      height: auto;
+
+      background-color: $color-basic-black;
+    }
+  }
+}
+
+.services__list {
+  display: flex;
+  overflow: hidden;
+
+  width: 760px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.services__item {
+  flex-shrink: 0;
+  order: 2;
+
+  width: 100%;
+  padding-top: 71px;
+  padding-right: 185px;
+
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+
+  &--credit {
+    background-image: url("../img/credit.svg");
+  }
+
+  &--delivery {
+    background-image: url("../img/delivery.svg");
+  }
+
+  &--warranty {
+    background-image: url("../img/warranty.svg");
+  }
+
+  &--current {
+    order: 1;
+  }
+}
+
+.services__title {
+  margin: 0;
+  margin-bottom: 40px;
+
+  letter-spacing: 0.2em;
+
+  font-family: $font-f-secondary;
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 58px;
+}
+
+.services__desc {
+  margin: 0;
+
+  letter-spacing: 0.1em;
+
+  line-height: 30px;
+}

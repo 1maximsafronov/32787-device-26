@@ -1,0 +1,98 @@
+.contact {
+  position: relative;
+
+  padding-top: 57px;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 80px;
+    height: 7px;
+
+    content: "";
+
+    background-color: $color-basic-black;
+  }
+}
+
+.contact__title {
+  margin: 0;
+  margin-bottom: 40px;
+
+  letter-spacing: 0.2em;
+
+  font-family: $font-f-secondary;
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 58px;
+}
+
+.contact__text {
+  margin: 0;
+  margin-bottom: 40px;
+
+  line-height: 28px;
+}
+
+.contact__map {
+  display: block;
+
+  width: 560px;
+  height: 222px;
+  margin-bottom: 75px;
+
+  img {
+    display: block;
+  }
+}
+
+.contact__write-us {
+  position: relative;
+
+  display: inline-block;
+
+  min-width: 260px;
+  padding-top: 10px;
+  padding-right: 14px;
+  padding-bottom: 8px;
+  padding-left: 14px;
+
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  color: $color-basic-black;
+
+  font-family: $font-f-secondary;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 22px;
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+    top: calc(50% - 4px);
+    right: 0;
+    left: 0;
+
+    height: 8px;
+
+    content: "";
+
+    background-color: $color-special-yellow-dark;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-special-yellow-dark;
+  }
+
+  &:active {
+    color: $color-basic-black-opacity-30;
+    background-color: $color-special-yellow-dark;
+  }
+}

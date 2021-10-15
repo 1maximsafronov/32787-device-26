@@ -1,0 +1,174 @@
+.promo-product {
+  position: relative;
+
+  box-shadow: inset 0 146px 0 0 $color-special-yellow;
+}
+
+.promo-product__wrapper {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding-right: 60px;
+}
+
+.promo-product__picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 580px;
+  margin: 0;
+}
+
+.promo-product__info {
+  position: relative;
+  z-index: 1;
+
+  width: 500px;
+  padding-top: 110px;
+
+  &::before {
+    position: absolute;
+    top: 50px;
+    left: 0;
+
+    width: 100px;
+    height: 7px;
+
+    content: "";
+
+    background-color: $color-basic-white;
+  }
+}
+
+.promo-product__counter {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: -13px;
+
+  width: 100%;
+  margin: 0;
+
+  text-align: right;
+  text-transform: uppercase;
+
+  color: $color-basic-white;
+
+  font-family: $font-f-secondary;
+  font-size: 179px;
+  font-weight: 800;
+  line-height: 219px;
+}
+
+.promo-product__title {
+  margin: 0;
+  margin-bottom: 26px;
+
+  font-family: $font-f-secondary;
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 58px;
+}
+
+.promo-product__text {
+  margin: 0;
+  margin-bottom: 51px;
+  padding-right: 25px;
+}
+
+.promo-product__read-more {
+  position: relative;
+  z-index: 1;
+
+  display: inline-block;
+
+  min-width: 220px;
+  margin: 0;
+  margin-bottom: 51px;
+  padding-top: 10px;
+  padding-right: 14px;
+  padding-bottom: 8px;
+  padding-left: 14px;
+
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  color: $color-basic-black;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+
+  font-family: $font-f-secondary;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 22px;
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+    top: calc(50% - 4px);
+    right: 0;
+    left: 0;
+
+    height: 8px;
+
+    content: "";
+
+    background-color: $color-special-yellow-dark;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-special-yellow-dark;
+  }
+
+  &:active {
+    color: $color-basic-black-opacity-30;
+    background-color: $color-special-yellow-dark;
+  }
+}
+
+.promo-product__features {
+  display: flex;
+
+  font-family: $font-f-secondary;
+}
+
+.promo-product__features-item {
+  display: flex;
+  flex-direction: column-reverse;
+
+  margin-right: 62px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.promo-product__features-name {
+  margin: 0;
+  padding: 0;
+
+  letter-spacing: 0.1em;
+
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 15px;
+}
+
+.promo-product__features-value {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+
+  letter-spacing: 0.1em;
+
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 42px;
+}

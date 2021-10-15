@@ -1,0 +1,192 @@
+.filter-form {
+  position: relative;
+
+  padding: 0;
+  padding-right: 68px;
+  padding-left: 60px;
+
+  background-color: $color-basic-grey-light;
+
+  font-size: 14px;
+  line-height: 19px;
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    display: block;
+
+    width: 5000px;
+
+    content: "";
+
+    background-color: $color-basic-grey-light;
+  }
+}
+
+.filter-form__title {
+  position: relative;
+  z-index: 1;
+
+  margin: 0;
+  margin-bottom: 70px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  background-color: #dcdcdc;
+
+  font-family: $font-f-secondary;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 20px;
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: -68px;
+    bottom: 0;
+
+    display: block;
+
+    width: 5000px;
+
+    content: "";
+
+    background-color: #dcdcdc;
+  }
+}
+
+.filter-form__item {
+  display: block;
+
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+
+  border: none;
+
+  legend {
+    display: block;
+    float: left;
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  &--bluetooth {
+    margin-bottom: 47px;
+  }
+}
+
+.filter-form__subtitle {
+  margin: 0;
+  margin-bottom: 30px;
+  padding-top: 14px;
+
+  letter-spacing: 0.1em;
+
+  border-top: 2px solid $color-basic-black;
+
+  font-family: $font-f-secondary;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 17px;
+}
+
+.filter-form__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.filter-form__list-item {
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.filter-form__submit {
+  position: relative;
+  z-index: 1;
+
+  display: inline-block;
+
+  width: 100%;
+  margin: 0;
+  margin-bottom: 15px;
+  padding-top: 10px;
+  padding-right: 14px;
+  padding-bottom: 8px;
+  padding-left: 14px;
+
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  color: $color-basic-black;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+
+  font-family: $font-f-secondary;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 22px;
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+    top: calc(50% - 4px);
+    right: 0;
+    left: 0;
+
+    height: 8px;
+
+    content: "";
+
+    background-color: $color-special-yellow-dark;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-special-yellow-dark;
+  }
+
+  &:active {
+    color: $color-basic-black-opacity-30;
+    background-color: $color-special-yellow-dark;
+  }
+}
+
+.filter-form__range {
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.filter-form__price {
+  display: flex;
+  justify-content: space-between;
+
+  font-family: $font-f-secondary;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16px;
+}
+
+.filter-form__price-value {
+  width: 90px;
+  margin: 0;
+  padding: 0;
+}

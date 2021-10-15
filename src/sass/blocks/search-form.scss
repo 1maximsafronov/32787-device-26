@@ -1,0 +1,84 @@
+.search-form {
+  display: flex;
+  align-items: flex-start;
+}
+
+.search-form__textbox {
+  display: block;
+
+  box-sizing: border-box;
+  width: 356px;
+  margin: 0;
+  padding: 0;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 38px;
+
+  color: $color-basic-black;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  background-color: transparent;
+  background-image: url("../img/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  background-size: 16px 16px;
+
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+
+  &::placeholder {
+    color: $color-basic-black-opacity-30;
+  }
+
+  &:hover::placeholder {
+    color: $color-basic-black-opacity-60;
+  }
+
+  &:focus {
+    box-shadow: inset 0 -2px 0 0 $color-basic-black;
+  }
+
+  &:focus + .search-form__submit {
+    display: block;
+  }
+}
+
+.search-form__submit {
+  display: none;
+
+  margin: 0;
+  padding: 0;
+  padding-top: 13px;
+  padding-right: 15px;
+  padding-bottom: 13px;
+  padding-left: 15px;
+
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $color-basic-black;
+  border: 2px solid $color-basic-black;
+  border-radius: 0;
+  background-color: transparent;
+
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+
+  &:hover,
+  &:focus {
+    display: block;
+
+    color: $color-basic-white;
+    background-color: $color-basic-black;
+  }
+
+  &:active {
+    color: $color-basic-white-opacity-30;
+    background-color: $color-basic-black;
+  }
+}

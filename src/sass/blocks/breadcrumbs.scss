@@ -1,0 +1,57 @@
+.breadcrumbs {
+  display: flex;
+
+  padding: 0;
+
+  list-style: none;
+
+  color: $color-basic-black-opacity-30;
+
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.breadcrumbs__item {
+  position: relative;
+
+  margin-right: 40px;
+
+  &::after {
+    position: absolute;
+    top: calc(50% - 6px);
+    left: calc(100% + 14px);
+
+    display: block;
+
+    width: 12px;
+    height: 12px;
+
+    content: "";
+
+    background-image: url("../img/icon-nav-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+  }
+
+  &:last-child {
+    margin-right: 0;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.breadcrumbs__link {
+  color: inherit;
+
+  &:hover,
+  &:focus {
+    color: $color-basic-black-opacity-60;
+  }
+
+  &:active {
+    color: $color-basic-black-opacity-10;
+  }
+}

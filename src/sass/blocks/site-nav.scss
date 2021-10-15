@@ -1,0 +1,44 @@
+.site-nav {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  padding: 0;
+
+  list-style: none;
+
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  color: $color-basic-black;
+
+  font-family: $font-f-secondary;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 22px;
+
+  &--light {
+    color: $color-basic-white;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  a:hover,
+  a:focus {
+    opacity: 0.6;
+  }
+
+  a:active {
+    opacity: 0.3;
+  }
+}
+
+.site-nav__item {
+  margin-right: 36px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

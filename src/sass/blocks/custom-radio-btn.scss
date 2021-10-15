@@ -1,0 +1,73 @@
+.custom-radio-btn {
+  position: relative;
+
+  padding-left: 42px;
+
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    top: -2px;
+    left: 0;
+
+    display: block;
+
+    width: 24px;
+    height: 24px;
+
+    content: "";
+
+    border-radius: 50%;
+    background-image: url("../img/icon-radio-off.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      opacity: 0.6;
+    }
+  }
+}
+
+input:checked + .custom-radio-btn {
+  &::before {
+    background-image: url("../img/icon-radio-on.svg");
+  }
+}
+
+input:checked:active + .custom-radio-btn {
+  &::before {
+    background-image: url("../img/icon-radio-off.svg");
+  }
+}
+
+input:focus + .custom-radio-btn {
+  &::before {
+    opacity: 0.6;
+  }
+}
+
+input:active + .custom-radio-btn {
+  &::before {
+    opacity: 1;
+    background-image: url("../img/icon-radio-on.svg");
+  }
+}
+
+input:disabled + .custom-radio-btn,
+input:disabled:focus + .custom-radio-btn,
+input:disabled:active + .custom-radio-btn {
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 0.25;
+
+    &::before {
+      opacity: 0.25;
+    }
+  }
+}
