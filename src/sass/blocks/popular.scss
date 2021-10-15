@@ -1,5 +1,5 @@
 .popular {
-  margin-bottom: 50px;
+  margin-bottom: 49px;
   padding-top: 20px;
 }
 
@@ -58,6 +58,7 @@
   width: 160px;
   height: 160px;
   margin: 0;
+  margin-bottom: 38px;
 
   background-color: $color-special-yellow;
 
@@ -67,6 +68,8 @@
 }
 
 .popular__name {
+  margin: 0;
+
   letter-spacing: 0.05em;
 
   color: $color-basic-black;

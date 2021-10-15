@@ -35,14 +35,23 @@
 }
 
 .page-footer__site-nav {
+  justify-content: center;
+
+  width: 450px;
   margin: 0;
+
+  .site-nav__item {
+    margin-right: 33px;
+  }
 }
 
 .page-footer__address {
+  width: 260px;
   margin: 0;
 }
 
 .page-footer__phone {
+  width: 260px;
   margin: 0;
 
   text-align: right;

@@ -1,11 +1,17 @@
 .page-header {
   padding-top: 5px;
+
+  &--inner-page {
+    .page-header__nav {
+      padding-bottom: 50px;
+    }
+  }
 }
 
 .page-header__nav {
   padding-top: 30px;
   padding-right: 60px;
-  padding-bottom: 50px;
+  padding-bottom: 18px;
   padding-left: 60px;
 
   background-color: $color-special-yellow;
@@ -16,7 +22,7 @@
   align-items: center;
   justify-content: space-between;
 
-  margin-bottom: 35px;
+  margin-bottom: 32px;
 
   &:last-child {
     margin-bottom: 0;

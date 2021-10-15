@@ -3,7 +3,6 @@
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
 
   padding-top: 25px;
   padding-bottom: 25px;
@@ -29,6 +28,7 @@
 
 .catalog-sort__title {
   margin: 0;
+  margin-right: 74px;
 
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -53,7 +53,7 @@
 }
 
 .catalog-sort__item {
-  margin-right: 30px;
+  margin-right: 32px;
 
   &--active {
     .catalog-sort__link,
@@ -81,6 +81,8 @@
 .catalog-sort__direction {
   display: flex;
   align-items: flex-end;
+
+  margin-left: auto;
 }
 
 .catalog-sort__direction-toggle {

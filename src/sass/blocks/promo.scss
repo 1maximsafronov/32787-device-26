@@ -1,12 +1,10 @@
 .promo {
   position: relative;
-
-  margin-bottom: 75px;
 }
 
 .promo__list {
   display: flex;
-  overflow-x: hidden;
+  overflow: hidden;
 
   margin: 0;
   padding: 0;
