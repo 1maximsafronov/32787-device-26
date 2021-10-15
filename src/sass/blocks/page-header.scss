@@ -59,7 +59,7 @@
   width: 500px;
   margin: 0;
 
-  .site-nav__item:last-child {
-    margin-left: auto;
+  .site-nav__item:nth-child(2) {
+    margin-right: auto;
   }
 }
